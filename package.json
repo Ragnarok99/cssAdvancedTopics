@@ -1,0 +1,19 @@
+{
+  "name": "cssadvance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/main.scss css/app.css -w",
+    "start": "concurrently \"live-server\" \"npm run compile-sass -w\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0"
+  }
+}
